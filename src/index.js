@@ -22,3 +22,10 @@ function fetchBreeds() {
     .then(response => response.json())
     .then(breeds => breeds.message.forEach(breed => displayBreed(breed)))
 }
+
+function displayBreed(breed) {
+    let ul = document.getElementById("dog-breeds")
+    let li = document.createElement("li")
+    li.innerText = breed
+    ul.appendChild(li)
+}
