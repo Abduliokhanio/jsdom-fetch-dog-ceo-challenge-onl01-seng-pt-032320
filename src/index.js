@@ -15,3 +15,10 @@ document.addEventListener("DOMContentLoaded", function() {
     img.src = image
     imgContainer.appendChild(img)
 }
+
+const breedUrl = "https://dog.ceo/api/breeds/list/all"
+function fetchBreeds() {
+    fetch("https://dog.ceo/api/breeds/list/all")
+    .then(response => response.json())
+    .then(breeds => breeds.message.forEach(breed => displayBreed(breed)))
+}
