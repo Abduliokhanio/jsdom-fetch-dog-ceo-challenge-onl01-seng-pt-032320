@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
 }
 
 const breedUrl = "https://dog.ceo/api/breeds/list/all"
-function fetchBreeds() {
-    fetch("https://dog.ceo/api/breeds/list/all")
-    .then(response => response.json())
-    .then(breeds => breeds.message.forEach(breed => displayBreed(breed)))
-}
+// function fetchBreeds() {
+//     fetch("https://dog.ceo/api/breeds/list/all")
+//     .then(response => response.json())
+//     .then(breeds => breeds.message.forEach(breed => displayBreed(breed)))
+// }
